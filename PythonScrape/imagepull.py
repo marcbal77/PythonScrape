@@ -3,11 +3,14 @@
 from bs4 import BeautifulSoup
 from urllib2 import urlopen
 
+#richmond
 site = "http://richmond.craigslist.org/rea/"
 table = BeautifulSoup(urlopen(site))
 items = table('p')
 linkdict = {}
 i = 0
+
+#for in loop
 for item in items[:-1]:
     i=i+1
     itempostlink = item('a')[0]['href']
