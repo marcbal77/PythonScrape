@@ -39,6 +39,7 @@ def console_main():
 
     scraper.get_img_list()
 
+""" if scraper list """
     if len(scraper.images) == 0:
         sys.exit("Sorry, no images found.")
     if scraper.no_to_download is None:
