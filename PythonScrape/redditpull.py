@@ -11,7 +11,11 @@ import urllib2
 redditFile = urllib2.urlopen("http://www.reddit.com")
 redditHtml = redditFile.read()
 redditFile.close()
- 
+
+#------------------------------------
+# Soup tags will put all context into
+# view
+#------------------------------------ 
 soup = BeautifulSoup(redditHtml)
 redditAll = soup.find_all("a")
 for links in soup.find_all('a'):
