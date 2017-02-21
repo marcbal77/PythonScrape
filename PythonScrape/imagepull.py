@@ -17,6 +17,8 @@ for item in items[:-1]:
     itemlink = site[:-5] + itempostlink
     linkdict[i] = itemlink
 
+#for a side project, include decible levels
+#incorporate print out for Beautiful Soup
 for i, link in linkdict.iteritems():
     print i, linkdict[i]
     images = BeautifulSoup(urlopen(linkdict[i]))('img')
