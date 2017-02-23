@@ -1,3 +1,4 @@
+# Exception to be included as necessary
 """ Contains all the custom exceptions used. """
 
 class DirectoryAccessError(Exception):
