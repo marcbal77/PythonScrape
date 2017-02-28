@@ -19,7 +19,7 @@ class ImageDownloadError(Exception):
     def __init__(self, status_code=0):
         super(ImageDownloadError, self).__init__()
         self.status_code = status_code
-
+# Size Errors
 class ImageSizeError(Exception):
     """ Exception to be raised when the image is over the file size. """
     image_size = 0
@@ -28,6 +28,7 @@ class ImageSizeError(Exception):
         super(ImageSizeError, self).__init__()
         self.image_size = image_size
 
+# Page loading errors
 class PageLoadError(Exception):
     """ Exception to be raised when the page can't be loaded. """
     status_code = 0
