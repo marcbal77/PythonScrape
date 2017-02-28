@@ -1,15 +1,17 @@
 # Exception to be included as necessary
 """ Contains all the custom exceptions used. """
 
-#Access
+#Access Errors
 class DirectoryAccessError(Exception):
     """ Exception to be raised when the directory can't be accessed. """
     pass
 
+# Directory Errors
 class DirectoryCreateError(Exception):
     """ Exception to be raised when the directory can't be created. """
     pass
 
+# Download Errors
 class ImageDownloadError(Exception):
     """ Exception to be raised when the imace can't be downloaded. """
     status_code = 0
