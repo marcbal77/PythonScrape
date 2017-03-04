@@ -104,7 +104,7 @@ class RotatingMarker(ProgressBarWidget):
         self.curmark = (self.curmark + 1) % len(self.markers)
         return self.markers[self.curmark]
 
-
+"Class for percentage load bar widget"
 class Percentage(ProgressBarWidget):
 
     "Just the percentage done."
