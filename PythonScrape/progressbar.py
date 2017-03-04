@@ -136,7 +136,7 @@ class Bar(ProgressBarWidgetHFill):
         bar = (self.left + (m * marked_width).ljust(cwidth) + self.right)
         return bar
 
-
+"ReverseBar movement class"
 class ReverseBar(Bar):
 
     "The reverse bar of progress, or bar of regress. :)"
