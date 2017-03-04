@@ -112,7 +112,7 @@ class Percentage(ProgressBarWidget):
     def update(self, pbar):
         return '%3d%%' % pbar.percentage()
 
-
+"ProgressBar Fill class"
 class Bar(ProgressBarWidgetHFill):
 
     "The bar of progress. It will strech to fill the line."
