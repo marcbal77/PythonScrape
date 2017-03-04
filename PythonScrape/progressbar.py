@@ -151,7 +151,7 @@ class ReverseBar(Bar):
 
 default_widgets = [Percentage(), ' ', Bar()]
 
-
+"Class for the project bar update"
 class ProgressBar(object):
 
     """This is the ProgressBar class, it updates and prints the bar.
