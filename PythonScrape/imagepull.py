@@ -1,5 +1,6 @@
 #!/usr/bin/python
 
+#from pulls for url and beautysoup imports include non-false positives
 from bs4 import BeautifulSoup
 from urllib2 import urlopen
 
