@@ -89,7 +89,7 @@ class FileTransferSpeed(ProgressBarWidget):
             spd /= 1000
         return self.fmt % (spd, u + '/s')
 
-
+"Establish Class for RotatingMarker"
 class RotatingMarker(ProgressBarWidget):
 
     "A rotating marker for filling the bar of progress."
