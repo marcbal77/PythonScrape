@@ -24,6 +24,7 @@ for i, link in linkdict.iteritems():
     print i, linkdict[i]
     images = BeautifulSoup(urlopen(linkdict[i]))('img')
     imagecounter = 0
+    #image for loop
     for image in images:
         imagecounter +=1
         image_url =image['src']
