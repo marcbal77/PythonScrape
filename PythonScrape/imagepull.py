@@ -21,6 +21,7 @@ for item in items[:-1]:
 #for a side project, include decible levels
 #incorporate print out for Beautiful Soup
 for i, link in linkdict.iteritems():
+    #Print available insert for linkdict
     print i, linkdict[i]
     images = BeautifulSoup(urlopen(linkdict[i]))('img')
     imagecounter = 0
