@@ -3,11 +3,13 @@
 from future.standard_library import install_aliases
 install_aliases()
 from lxml import html
+# Note to make separate spares request to identify separate utility batches
 import requests
 from urllib.parse import urlparse, urljoin
 from past.utils import old_div
 import os
 import argparse
+# Re for variable redirect
 import re
 from .exceptions import PageLoadError, DirectoryAccessError,\
                         DirectoryCreateError, ImageDownloadError, ImageSizeError
@@ -76,6 +78,7 @@ class ImageScraper(object):
         self.format_list = args.formats if args.formats else [
             "jpg", "png", "gif", "svg", "jpeg"]
         self.max_filesize = args.max_filesize
+        # auto dump banner urls
         self.dump_urls = args.dump_urls
         self.proxy_url = args.proxy_server
         self.proxies = {}
