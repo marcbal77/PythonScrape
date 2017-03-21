@@ -44,7 +44,7 @@ def console_main():
         sys.exit("Sorry, no images found.")
     if scraper.no_to_download is None:
         scraper.no_to_download = len(scraper.images)
-
+        # Delive image report
     print("Found {0} images: ".format(len(scraper.images)))
 
     try:
