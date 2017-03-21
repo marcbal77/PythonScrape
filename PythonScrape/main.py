@@ -66,6 +66,7 @@ def console_main():
     pbar = ProgressBar(widgets=widgets, maxval=100).start()
     pool = ThreadPoolExecutor(max_workers=scraper.nthreads)
     status_lock = threading.Lock()
+    # Loop thru image URL's
     for img_url in scraper.images:
         if status_flags['count'] == scraper.no_to_download:
             break
