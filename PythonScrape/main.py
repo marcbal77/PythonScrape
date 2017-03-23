@@ -46,7 +46,7 @@ def console_main():
         scraper.no_to_download = len(scraper.images)
         # Delive image report
     print("Found {0} images: ".format(len(scraper.images)))
-
+    # try for process dload path
     try:
         scraper.process_download_path()
     except DirectoryAccessError:
