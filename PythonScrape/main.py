@@ -55,7 +55,7 @@ def console_main():
     except DirectoryCreateError:
         print("Sorry, the directory can't be created.")
         sys.exit()
-
+    # if for loop to check dumped urls
     if scraper.dump_urls:
         for img_url in scraper.images:
             print(img_url)
