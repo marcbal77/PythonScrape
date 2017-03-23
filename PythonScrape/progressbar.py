@@ -13,7 +13,7 @@ except ImportError:
     pass
 import signal
 
-
+# Provide object for progressbar wiget format
 class ProgressBarWidget(object):
 
     """This is an element of ProgressBar formatting.
