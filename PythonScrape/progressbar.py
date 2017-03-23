@@ -30,7 +30,7 @@ class ProgressBarWidget(object):
         At least this function must be overriden."""
         pass
 
-
+# Widget Fill Formatting
 class ProgressBarWidgetHFill(object):
 
     """This is a variable width element of ProgressBar formatting.
