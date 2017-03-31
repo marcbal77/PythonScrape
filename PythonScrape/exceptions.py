@@ -13,10 +13,11 @@ class DirectoryCreateError(Exception):
 
 # Download Errors
 class ImageDownloadError(Exception):
-    """ Exception to be raised when the imace can't be downloaded. """
+    """ Exception to be raised when the image can't be downloaded. """
     status_code = 0
 
     def __init__(self, status_code=0):
+        # Status code error initiation for when images can't be loaded
         super(ImageDownloadError, self).__init__()
         self.status_code = status_code
 # Size Errors
@@ -32,7 +33,7 @@ class ImageSizeError(Exception):
 class PageLoadError(Exception):
     """ Exception to be raised when the page can't be loaded. """
     status_code = 0
-
+        # Status_code error initiation for page load problems
     def __init__(self, status_code):
         super(PageLoadError, self).__init__()
         self.status_code = status_code
