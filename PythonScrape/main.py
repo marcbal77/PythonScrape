@@ -36,7 +36,7 @@ def console_main():
         else:
             print("Page failed to load. Status code: {0}".format(err.status_code))
         sys.exit()
-
+    # scraper to get imgage list call out
     scraper.get_img_list()
 
 """ if scraper list """
