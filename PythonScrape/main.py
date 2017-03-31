@@ -11,7 +11,7 @@ from concurrent.futures import ThreadPoolExecutor
 import threading
 import sys
 
-
+# function main call
 def main():
     """ Called when the command is executed
         Calls the function that starts the script
