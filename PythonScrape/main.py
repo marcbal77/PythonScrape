@@ -21,7 +21,7 @@ def main():
         console_main()
     except KeyboardInterrupt:
         print ("Scraping stopped by user.")
-
+# function call to console
 def console_main():
     """ This function handles all the console action. """
     setproctitle('image-scraper')
