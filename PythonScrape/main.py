@@ -60,6 +60,7 @@ def console_main():
         for img_url in scraper.images:
             print(img_url)
 
+    #status flags and wigets data - added in pbar,pool, and lock for widgets
     status_flags = {'count': 0, 'percent': 0.0, 'failed': 0, 'over_max_filesize': 0}
     widgets = ['Progress: ', Percentage(), ' ', Bar(marker=RotatingMarker()),
                ' ', ETA(), ' ', FileTransferSpeed()]
