@@ -62,6 +62,7 @@ def console_main():
 
     #status flags and wigets data - added in pbar,pool, and lock for widgets
     status_flags = {'count': 0, 'percent': 0.0, 'failed': 0, 'over_max_filesize': 0}
+    # Widgets direct call out
     widgets = ['Progress: ', Percentage(), ' ', Bar(marker=RotatingMarker()),
                ' ', ETA(), ' ', FileTransferSpeed()]
     pbar = ProgressBar(widgets=widgets, maxval=100).start()
