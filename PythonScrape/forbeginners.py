@@ -20,3 +20,6 @@ print soup.a
 
 # Print the text.
 print(soup.get_text())
+
+#Note: Any Free Learners Picking Up This Tool
+#Note: This tool and all files in this repository are still underconstruction
